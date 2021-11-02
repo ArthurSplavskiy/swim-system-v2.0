@@ -2,11 +2,13 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+
 import table1 from '../../img/table-1.svg'
 import table2 from '../../img/table-2.svg'
 import table3 from '../../img/table-3.svg'
 import parallaxSwimmer from '../../img/swim-swimmer.png'
 import drops from '../../img/drops.png'
+import './index.scss'
 
 const BeamsContainer = styled.div`
     width: 100vw;

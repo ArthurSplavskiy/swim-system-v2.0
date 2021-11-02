@@ -1,5 +1,9 @@
 import React from 'react'
+
 import quoteImg from '../../img/icons/quote.svg'
+import './index.scss'
+
+
 
 const Slide = ({ data, id }) => {
 
@@ -42,5 +46,7 @@ const Slide = ({ data, id }) => {
         </div>
     )
 }
+
+
 
 export default Slide

@@ -1,5 +1,6 @@
 import React from 'react'
-import SectionHead from '../elements/SectionHeading'
+
+import SectionHead from '../../elements/SectionHeading'
 import { Container } from '../../globalStyle'
 
 import img1 from '../../img/competitions/1.png'
@@ -10,6 +11,9 @@ import img5 from '../../img/competitions/5.svg'
 import img6 from '../../img/competitions/6.svg'
 import img7 from '../../img/competitions/7.png'
 import img8 from '../../img/competitions/8.svg'
+import './index.scss'
+
+
 
 const Competition = () => {
 
@@ -34,5 +38,7 @@ const Competition = () => {
         </div>
     )
 }
+
+
 
 export default Competition

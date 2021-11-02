@@ -1,10 +1,15 @@
 import React from 'react'
+
 import { Container } from '../../globalStyle'
-import ArticleImage from '../elements/ArticleImage'
-import ParallaxItem from '../elements/ParallaxItem'
-import SectionDescription from '../elements/SectionDescription'
+import ArticleImage from '../../elements/ArticleImage'
+import ParallaxItem from '../../elements/ParallaxItem'
+import SectionDescription from '../../elements/SectionDescription'
+
 import img3 from '../../img/3.png'
 import img4 from '../../img/4.png'
+import './index.scss'
+
+
 
 const ArticleSection = () => {
 
@@ -44,5 +49,7 @@ const ArticleSection = () => {
         </section>
     )
 }
+
+
 
 export default ArticleSection

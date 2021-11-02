@@ -1,11 +1,16 @@
 import React, { useEffect, useRef } from 'react'
-import FaqSpoller from '../elements/FaqSpoller'
-import { faqData } from '../../data/faqData'
-import { Container } from '../../globalStyle'
-import SectionHead from '../elements/SectionHeading'
-import swimLogo from '../../img/icons/swim-faq.svg'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+import FaqSpoller from '../../elements/FaqSpoller'
+import { faqData } from '../../data/faqData'
+import { Container } from '../../globalStyle'
+import SectionHead from '../../elements/SectionHeading'
+
+import swimLogo from '../../img/icons/swim-faq.svg'
+import './index.scss'
+
+
 
 const FaqsSection = () => {
     const blurLogo = useRef()
@@ -83,5 +88,7 @@ const FaqsSection = () => {
         </div>
     )
 }
+
+
 
 export default FaqsSection

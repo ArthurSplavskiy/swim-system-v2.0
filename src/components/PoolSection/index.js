@@ -1,12 +1,17 @@
 import React from 'react'
+
 import { Container } from '../../globalStyle'
-import PoolItem from '../elements/PoolItem'
-import SectionDescription from '../elements/SectionDescription'
-import SectionHead from '../elements/SectionHeading'
+import PoolItem from '../../elements/PoolItem'
+import SectionDescription from '../../elements/SectionDescription'
+import SectionHead from '../../elements/SectionHeading'
+
 import img5 from '../../img/5.png'
 import img6 from '../../img/6.png'
 import img7 from '../../img/7.png'
 import img8 from '../../img/8.png'
+import './index.scss'
+
+
 
 const PoolSection = () => {
 
@@ -72,5 +77,7 @@ const PoolSection = () => {
         </section>
     )
 }
+
+
 
 export default PoolSection

@@ -1,6 +1,11 @@
 import React, { useRef, useCallback, useEffect, useState } from 'react'
-import { TextAnimationIn, TextAnimation } from './TextAnimation'
+
+import { TextAnimationIn, TextAnimation } from '../../utils/TextAnimation'
+
 import logo from '../../img/icons/swim-1.svg'
+import './index.scss'
+
+
 
 const Preloader = ({ setLoading, loading}) => {
     const preloaderRef = useRef()
@@ -82,6 +87,8 @@ const Preloader = ({ setLoading, loading}) => {
         </div>
     )
 }
+
+
 
 export default Preloader
 

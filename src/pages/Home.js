@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import Preloader from '../components/elements/Preloader'
-import Modal from '../components/elements/Modal'
-import Timetable from '../components/elements/Timetable'
-import Success from '../components/elements/Success'
-import Form from '../components/elements/Form'
+import Preloader from '../elements/Preloader'
+import Modal from '../elements/Modal'
+import Timetable from '../elements/Timetable'
+import Success from '../elements/Success'
+import Form from '../elements/Form'
 import { modalContext } from '../utils/context'
 
 import {

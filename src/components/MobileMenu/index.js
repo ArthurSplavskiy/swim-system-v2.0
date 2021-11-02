@@ -1,7 +1,12 @@
 import React, { useContext } from 'react'
-import { menuData } from '../../data/MenuData'
 import styled from 'styled-components'
+
+import { menuData } from '../../data/MenuData'
 import { languageContext } from '../../utils/context'
+
+import './index.scss'
+
+
 
 const MenuWrapper = styled.div`
     overflow-x: hidden;
@@ -42,5 +47,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
         </MenuWrapper>
     )
 }
+
+
 
 export default MobileMenu

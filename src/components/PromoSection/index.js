@@ -1,8 +1,13 @@
 import React, { useEffect } from 'react'
-import { Container } from '../../globalStyle'
-import BackgroundImg from '../../img/main-banner.png'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+import { Container } from '../../globalStyle'
+
+import BackgroundImg from '../../img/main-banner.png'
+import './index.scss'
+
+
 
 const PromoSection = () => {
 
@@ -144,5 +149,7 @@ const PromoSection = () => {
         </section>
     )
 }
+
+
 
 export default PromoSection

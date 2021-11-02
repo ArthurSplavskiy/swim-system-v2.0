@@ -1,7 +1,12 @@
 import React from 'react'
+
 import { Container } from '../../globalStyle'
+import { Form } from '../../elements'
+
 import increate from '../../img/icons/increate-copyright.svg'
-import Form from '../elements/Form.js'
+import './index.scss'
+
+
 
 const FormSection = () => {
 
@@ -23,5 +28,7 @@ const FormSection = () => {
         </section>
     )
 }
+
+
 
 export default FormSection

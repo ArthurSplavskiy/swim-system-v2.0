@@ -1,7 +1,12 @@
 import React from 'react'
-import icon from '../../img/icons/swim-faq.svg'
+
 import { timetableData } from '../../data/timetableData'
-import Button from './Button'
+import Button from '../Button'
+
+import icon from '../../img/icons/swim-faq.svg'
+import './index.scss'
+
+
 
 const Timetable = () => {
 
@@ -112,5 +117,7 @@ const Timetable = () => {
         </div>
     )
 }
+
+
 
 export default Timetable

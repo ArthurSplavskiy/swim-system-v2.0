@@ -1,8 +1,13 @@
 import React, { useEffect, useContext } from 'react'
 import gsap from 'gsap'
-import infoIcon from '../../img/icons/info.svg'
-import { modalContext } from '../../utils/context'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+import { modalContext } from '../../utils/context'
+
+import infoIcon from '../../img/icons/info.svg'
+import './index.scss'
+
+
 
 const SectionDescription = ({ column1, column2, column3, column4 = false, section }) => {
     const modalWindowContext = useContext(modalContext);
@@ -73,5 +78,7 @@ const SectionDescription = ({ column1, column2, column3, column4 = false, sectio
         </div>
     )
 }
+
+
 
 export default SectionDescription

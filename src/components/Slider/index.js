@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react'
-import SectionHead from '../elements/SectionHeading'
-import Slide from '../elements/Slide'
-import { ContainerFluid } from '../../globalStyle'
-import { slidesData } from '../../data/SlidesData'
+import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styled from 'styled-components'
-import gsap from 'gsap'
+
+import SectionHead from '../../elements/SectionHeading'
+import Slide from '../../elements/Slide'
+import { ContainerFluid } from '../../globalStyle'
+import { slidesData } from '../../data/SlidesData'
+
+import './index.scss'
+
+
 
 const SliderBody = styled.div`
     @media(min-width: 1241px) {
@@ -97,5 +102,7 @@ const Slider = () => {
         </div>
     )
 }
+
+
 
 export default Slider

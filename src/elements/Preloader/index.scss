@@ -1,0 +1,71 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #010101;
+    z-index: 101;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+
+    &.done {
+        animation: done 1s ease-in-out 0.5s forwards;
+    
+        @keyframes done {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    }
+    img {
+        width: 200px;
+    }
+    .percent {
+        -webkit-text-stroke: 0.6px #fff;
+        font-weight: 700;
+        font-size: 56px;
+        color: transparent;
+        margin-top: 80px;
+        position: absolute;
+        bottom: 120px;
+        transition: opacity 1s ease-in-out;
+        &:after {
+            content: '%'
+        }
+    }
+    .blur-logo {
+        position: relative;
+        align-self: center;
+        
+        lottie-player {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 233px;
+            max-height: 233px;
+            transition: opacity 1s ease-in-out;
+            z-index: 2;
+        }
+        img {
+            background: #088ECB;
+            opacity: 0.6;
+            filter: blur(70px);
+            width: 490px;
+            height: 490px;
+            border-radius: 100%;
+        }
+    }
+    &__body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+}

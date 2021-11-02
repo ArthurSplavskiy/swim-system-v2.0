@@ -1,8 +1,13 @@
 import React, {useRef} from 'react'
+import gsap from 'gsap'
+
 import { Container } from '../../globalStyle'
+
 import Logo from '../../img/logo.svg'
 import cross from '../../img/icons/cross.svg'
-import gsap from 'gsap'
+import './index.scss'
+
+
 
 const Modal = ({modalActive, setModalActive, children, modalId}) => {
     const cursor = useRef()
@@ -48,5 +53,7 @@ const Modal = ({modalActive, setModalActive, children, modalId}) => {
         </div>
     )
 }
+
+
 
 export default Modal

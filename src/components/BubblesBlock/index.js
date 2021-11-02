@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import bubbles1 from '../../img/icons/drops-1.png'
 import bubbles2 from '../../img/icons/drops-2.png'
 import bubbles3 from '../../img/icons/drops-3.png'
 import swimLogo from '../../img/icons/swim-circle.svg'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import './index.scss'
 
 const BubblesBlock = () => {
     const bubblesBlockRef = useRef()

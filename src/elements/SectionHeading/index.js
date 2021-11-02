@@ -1,5 +1,9 @@
 import React from 'react'
 
+import './index.scss'
+
+
+
 const SectionHead = ({ children }) => {
 
     return(
@@ -8,5 +12,7 @@ const SectionHead = ({ children }) => {
         </h2>
     )
 }
+
+
 
 export default SectionHead

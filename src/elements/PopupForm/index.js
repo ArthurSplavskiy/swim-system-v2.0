@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Container } from '../../globalStyle'
-import Logo from '../img/logo.svg'
-import Form from './Form.js'
+import Logo from '../../img/logo.svg'
+import { Form } from '../index'
 import { NavLink } from 'react-router-dom'
 import gsap from 'gsap'
 

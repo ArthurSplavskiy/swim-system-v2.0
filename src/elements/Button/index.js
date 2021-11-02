@@ -1,6 +1,11 @@
 import React, {useContext} from 'react'
-import { modalContext } from '../../utils/context'
 import gsap from 'gsap'
+
+import { modalContext } from '../../utils/context'
+
+import './index.scss'
+
+
 
 const Button = ({text, status = false, big = false, modal, openModal, closeModal}) => {
     const modalWindowContext = useContext(modalContext);
@@ -47,5 +52,7 @@ const Button = ({text, status = false, big = false, modal, openModal, closeModal
         <button disabled={status} className={classes.join(' ')} onClick={() => clickHandler()}>{text}</button> 
     )
 }
+
+
 
 export default Button

@@ -1,0 +1,103 @@
+.navbar {
+    position: relative;
+    min-height: 104px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    @media(max-width: 992px) {
+        padding: 28px 0;
+        min-height: auto;
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+
+        @media(max-width: 768px) {
+            display: none;
+        }
+        &-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            margin-right: 32px;
+            font-size: clamp(13px, .9vw, 18px);
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    .lang-toggle {
+        pointer-events: none;
+        position: relative;
+        min-width: 30px;
+
+        @media(max-width: 992px) {
+            width: 25px;
+
+            &_desktop {
+                display: none;
+            }
+        }
+
+        &__item {
+            color: #010101;
+            font-weight: 700;
+            outline: none;
+            background: none;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;  
+            }
+        }
+        &__current {
+            color: #fff;
+            font-size: clamp(13px, .9vw, 18px);
+            font-weight: 700;
+            outline: none;
+            background: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            @media(min-width: 993px) {
+                text-decoration: underline;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 48px;
+                height: 50px;
+                transform: translateX(-50%);
+                background: transparent;
+                user-select: none;
+                z-index: -1;
+            }
+        }
+    }
+
+    .desktop-controls {
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 992px) {
+            display: none;
+        }
+    }
+}

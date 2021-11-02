@@ -1,11 +1,17 @@
 import React, { useContext } from 'react'
+import gsap from 'gsap'
 import styled from 'styled-components'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+
 import { menuData } from '../../data/MenuData'
 import { Container } from '../../globalStyle'
-import Logo from '../../img/logo.svg'
 import { languageContext } from '../../utils/context'
-import gsap from 'gsap'
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+
+import Logo from '../../img/logo.svg'
+import './index.scss'
+
+
+
 gsap.registerPlugin(ScrollToPlugin)
 
 const MenuBars = styled.div`
@@ -116,5 +122,7 @@ const Navbar = (props) => {
         </div>
     )
 }
+
+
 
 export default Navbar

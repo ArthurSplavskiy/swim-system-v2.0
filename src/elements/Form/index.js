@@ -1,8 +1,13 @@
 import React, { useState, useContext } from 'react'
 import emailjs from 'emailjs-com'
+
+import { modalContext } from '../../utils/context'
+
 import facebookLogo from '../../img/icons/facebook.svg'
 import instaLogo from '../../img/icons/instagram.svg'
-import { modalContext } from '../../utils/context'
+import './index.scss'
+
+
 
 const Form = ({ animation }) => {
     const modalWindowContext = useContext(modalContext);

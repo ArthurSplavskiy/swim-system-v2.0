@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react'
-import GalleryString from '../../data/GalleryString'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styled from 'styled-components'
-import SwimIcon from '../../img/icons/swim-1.svg'
 
+import GalleryString from '../../data/GalleryString'
+
+import SwimIcon from '../../img/icons/swim-1.svg'
 import img1 from '../../img/gellary/1.png'
 import img2 from '../../img/gellary/2.png'
 import img3 from '../../img/gellary/3.png'
@@ -16,6 +17,9 @@ import img8 from '../../img/gellary/8.png'
 import img9 from '../../img/gellary/9.png'
 import img10 from '../../img/gellary/10.png'
 import img11 from '../../img/gellary/11.png'
+import './index.scss'
+
+
 
 const GalleryBlock = () => {
     const img1Ref = useRef()
@@ -365,5 +369,7 @@ const GalleryBlock = () => {
         </div>
     )
 }
+
+
 
 export default GalleryBlock

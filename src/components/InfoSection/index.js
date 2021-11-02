@@ -1,13 +1,17 @@
 import React from 'react'
+
 import { Container } from '../../globalStyle'
-import ArticleImage from '../elements/ArticleImage'
-import ParallaxItem from '../elements/ParallaxItem'
-import SectionHead from '../elements/SectionHeading'
-import SectionDescription from '../elements/SectionDescription'
+import ArticleImage from '../../elements/ArticleImage'
+import ParallaxItem from '../../elements/ParallaxItem'
+import SectionHead from '../../elements/SectionHeading'
+import SectionDescription from '../../elements/SectionDescription'
+import Button from '../../elements/Button'
 
 import img1 from '../../img/1.png'
 import img2 from '../../img/2.png'
-import Button from '../elements/Button'
+import './index.scss'
+
+
 
 const InfoSection = () => {
 
@@ -63,5 +67,7 @@ const InfoSection = () => {
         </section>
     )
 }
+
+
 
 export default InfoSection

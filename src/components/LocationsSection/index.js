@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react'
-import { Container } from '../../globalStyle'
-
-import SectionHead from '../elements/SectionHeading'
-import SectionDescription from '../elements/SectionDescription'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+import { Container } from '../../globalStyle'
+import SectionHead from '../../elements/SectionHeading'
+import SectionDescription from '../../elements/SectionDescription'
+
 import pool1 from '../../img/pool-1.png'
 import pool2 from '../../img/pool-2.png'
+import './index.scss'
+
+
 
 const LocationSection = () => {
 
@@ -88,5 +91,7 @@ const LocationSection = () => {
         </section>
     )
 }
+
+
 
 export default LocationSection

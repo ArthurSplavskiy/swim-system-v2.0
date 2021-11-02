@@ -1,5 +1,5 @@
-import { TextLinesReveal } from '../../utils/textLinesReveal'
-import { TextLinesRevealFast } from '../../utils/textLinesRevealFast'
+import { TextLinesReveal } from './textLinesReveal'
+import { TextLinesRevealFast } from './textLinesRevealFast'
 import gsap from 'gsap'
 
 const TextAnimation = () => {
@@ -104,15 +104,7 @@ const TextAnimationIn = () => {
   const textLinesRevealOnLoad = new TextLinesReveal(
     [...document.querySelectorAll('._text-on-load')]
   );
-  //textLinesRevealOnLoad.out();
   textLinesRevealOnLoad.in();
 }
-
-// const TextAnimationOnScroll = () => {
-//   const textLinesRevealOnScroll = new TextLinesReveal(
-//     [...document.querySelectorAll('._text-on-scroll')]
-//   );
-//   textLinesRevealOnScroll.inScroll();
-// }
 
 export { TextAnimation, TextAnimationOut, TextAnimationIn }
