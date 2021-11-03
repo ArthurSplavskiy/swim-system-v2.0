@@ -29,8 +29,10 @@ const InfoSection = () => {
                     section=".info-section"
                 />
                 <div className="big-text _text-fill">
-                    <p className="front">ГРУПОВІ</p>
-                    <p className="back">ГРУПОВІ</p>
+                    ГРУПОВІ
+                    <span className="back">
+                        <span>ГРУПОВІ</span>
+                    </span>
                 </div>
 
                 <div className="article-block">
@@ -41,8 +43,10 @@ const InfoSection = () => {
                         <div className="content-side">
                             <div className="content-side__wrapper">
                                 <div className="text-overflow _text-fill">
-                                    <p className="front">тренування у басейні</p>
-                                    <p className="back">тренування у басейні</p>
+                                    тренування у басейні
+                                    <span className="back">
+                                        <span>тренування у басейні</span>
+                                    </span>
                                 </div>
                                 
                                 <div className="content-side__body">

@@ -19,18 +19,44 @@ const TextAnimation = () => {
       scrub: true
     }
   })
-  gsap.utils.toArray('._text-fill .back').forEach(text => {
 
-    gsap.to(text, {
-        height: '0',
-        scrollTrigger: {
-          trigger: text,
-          start: '-=600',
-          end: '+=800',
-          scrub: true
-        }
+  gsap.utils.toArray('._text-fill').forEach(text => {
+
+    const back = text.querySelector('.back')
+    const backSpan = text.querySelector('.back span')
+    
+    gsap.to(back, {
+      transform: 'translateY(0)',
+      scrollTrigger: {
+        trigger: text,
+        start: '-=600',
+        end: '+=800',
+        scrub: true
+      }
+    })
+    gsap.to(backSpan, {
+      transform: 'translateY(0)',
+      scrollTrigger: {
+        trigger: text,
+        start: '-=600',
+        end: '+=800',
+        scrub: true
+      }
     })
   })
+  // gsap.utils.toArray('._text-fill .back span').forEach(text => {
+
+  //   gsap.to(text, {
+  //       yPercent: 0,
+  //       scrollTrigger: {
+  //         trigger: '._text-fill',
+  //         start: '-=600',
+  //         end: '+=800',
+  //         scrub: true
+  //       }
+  //   })
+  // })
+
   gsap.utils.toArray('._line-bar').forEach(line => {
 
     gsap.to(line, {
