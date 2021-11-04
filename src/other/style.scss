@@ -47,7 +47,8 @@ html.lock {
 }
 
 ._line-bar, ._slide-line, ._line-bar-bottom, ._line-bar-middle {
-    width: 0;
+    transform-origin: 0 0;
+    transform: scaleX(0);
     height: 1px;
     background: #828282;
 }

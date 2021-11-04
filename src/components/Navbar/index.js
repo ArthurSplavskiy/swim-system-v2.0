@@ -76,7 +76,7 @@ const Navbar = (props) => {
     }
 
     const menuLinkHandler = (anchor) => {
-        gsap.to('.page-transition', {duration: 0.6, scaleX: 100+'%', transformOrigin: 'top left'})
+        gsap.to('.page-transition', {duration: 0.6, scaleX: 1, transformOrigin: 'top left'})
         gsap.to(window, {duration: 0.6, scrollTo: anchor, delay: 0.6});
         gsap.to('.page-transition', {duration: 0.4, scaleX: 0, delay: 1.2, transformOrigin: 'top right'})
     }

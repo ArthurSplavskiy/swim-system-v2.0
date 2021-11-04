@@ -20,7 +20,6 @@ import img11 from '../../img/gellary/11.png'
 import './index.scss'
 
 
-
 const GalleryBlock = () => {
     const img1Ref = useRef()
     const img2Ref = useRef()
@@ -45,7 +44,7 @@ const GalleryBlock = () => {
         }   
     `
 
-    const startPositionString = 18700;
+    const startPositionString = 20000; // 18700
 
 
     useEffect(() => {
@@ -145,6 +144,7 @@ const GalleryBlock = () => {
                 lineTimeline.to('.gallery-block .line-box_second', { width: '120%' }, 0)
                 lineTimeline.to('.gallery-block .line-box_third', { width: '100%' }, 0)
                 // ====================================================================
+                
                 // OVERLAY
                 gsap.to('.gallery-block__overlay', {
                     opacity: 1,

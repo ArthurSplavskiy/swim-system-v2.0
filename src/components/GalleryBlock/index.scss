@@ -130,6 +130,12 @@
             line-height: 25vh;
             text-transform: uppercase;
             white-space: nowrap;
+            
+            span {
+                padding: 0 40px;
+            }
+            
+
             @media(min-width: 1920px) {
                 font-size: 220px;
             }

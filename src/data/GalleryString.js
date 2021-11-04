@@ -71,21 +71,21 @@ const GalleryString = ({ direct }) => {
 
     return (
         <div className={directValue}>
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
-            swim <img src={SwimIcon} alt="Swim System" />system
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
+            <span>swim</span><img src={SwimIcon} alt="Swim System" /><span>system</span>
         </div>
     )
 }

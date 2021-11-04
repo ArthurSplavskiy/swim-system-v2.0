@@ -22,7 +22,7 @@ const Modal = ({modalActive, setModalActive, children, modalId}) => {
     }
 
     const closeModalHandler = () => {
-        gsap.to('.page-transition', {duration: 0.3, scaleX: 100+'%', transformOrigin: 'top left'})
+        gsap.to('.page-transition', {duration: 0.3, scaleX: 1, transformOrigin: 'top left'})
         gsap.to('.page-transition', {duration: 0.4, scaleX: 0, delay: 0.8, transformOrigin: 'top right'})
 
         setTimeout(() => {

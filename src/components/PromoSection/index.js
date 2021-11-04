@@ -96,10 +96,10 @@ const PromoSection = () => {
                 gsap.to('.promo-title .back', {
                     height: '100%',
                     scrollTrigger: {
-                    trigger: '.promo-title .back',
-                    start: '-=140',
-                    end: '+=300',
-                    scrub: true
+                        trigger: '.promo-title .back',
+                        start: '-=140',
+                        end: '+=300',
+                        scrub: true
                     }
                 })
                 // ===

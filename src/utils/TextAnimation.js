@@ -44,55 +44,43 @@ const TextAnimation = () => {
       }
     })
   })
-  // gsap.utils.toArray('._text-fill .back span').forEach(text => {
-
-  //   gsap.to(text, {
-  //       yPercent: 0,
-  //       scrollTrigger: {
-  //         trigger: '._text-fill',
-  //         start: '-=600',
-  //         end: '+=800',
-  //         scrub: true
-  //       }
-  //   })
-  // })
 
   gsap.utils.toArray('._line-bar').forEach(line => {
 
     gsap.to(line, {
-        width: '100%',
-        scrollTrigger: {
-          trigger: line,
-          start: '-=600',
-          end: '+=800',
-          scrub: true
-        }
+      scaleX: 1,
+      scrollTrigger: {
+        trigger: line,
+        start: '-=600',
+        end: '+=800',
+        scrub: true
+      }
     })
   })
 
   gsap.utils.toArray('._line-bar-middle').forEach(line => {
 
     gsap.to(line, {
-        width: '100%',
-        scrollTrigger: {
-          trigger: line,
-          start: '-=800',
-          end: '+=300',
-          scrub: true
-        }
+      scaleX: 1,
+      scrollTrigger: {
+        trigger: line,
+        start: '-=800',
+        end: '+=300',
+        scrub: true
+      }
     })
   })
 
   gsap.utils.toArray('._line-bar-bottom').forEach(line => {
 
     gsap.to(line, {
-        width: '100%',
-        scrollTrigger: {
-          trigger: line,
-          start: '-=1000',
-          end: '+=400',
-          scrub: true
-        }
+      scaleX: 1,
+      scrollTrigger: {
+        trigger: line,
+        start: '-=1000',
+        end: '+=400',
+        scrub: true
+      }
     })
   })
 

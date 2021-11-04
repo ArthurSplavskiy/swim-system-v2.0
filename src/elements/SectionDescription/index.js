@@ -17,7 +17,7 @@ const SectionDescription = ({ column1, column2, column3, column4 = false, sectio
             modalWindowContext.setTimetableModalActive(false)
         }, 300)
         
-        gsap.to('.page-transition', {duration: 0.3, scaleX: 100+'%', transformOrigin: 'top left'})
+        gsap.to('.page-transition', {duration: 0.3, scaleX: 1, transformOrigin: 'top left'})
         gsap.to('.page-transition', {duration: 0.4, scaleX: 0, delay: 0.8, transformOrigin: 'top right'})
     }
 
@@ -37,20 +37,20 @@ const SectionDescription = ({ column1, column2, column3, column4 = false, sectio
                 })
 
                 timeline.to(`${section} .column-1`, {
-                    opacity: 100+'%'
+                    opacity: 1
                 }, 1)
                 timeline.to(`${section} .column-2`, {
-                    opacity: 100+'%'
+                    opacity: 1
                 }, 2)
                 timeline.to(`${section} .column-3`, {
-                    opacity: 100+'%'
+                    opacity: 1
                 }, 3)
                 timeline.to(`${section} .column-4`, {
-                    opacity: 100+'%'
+                    opacity: 1
                 }, 4)
 
                 gsap.to(`${section} .underline`, {
-                    width: 100+'%',
+                    scaleX: 1,
                     scrollTrigger: {
                         trigger: `${section} .section-description`,
                         start: '-=700',

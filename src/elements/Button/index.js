@@ -37,7 +37,7 @@ const Button = ({text, status = false, big = false, modal, openModal, closeModal
         }, 300)
         
 
-        gsap.to('.page-transition', {duration: 0.3, scaleX: 100+'%', transformOrigin: 'top left'})
+        gsap.to('.page-transition', {duration: 0.3, scaleX: 1, transformOrigin: 'top left'})
         gsap.to('.page-transition', {duration: 0.4, scaleX: 0, delay: 0.8, transformOrigin: 'top right'})
     }
     

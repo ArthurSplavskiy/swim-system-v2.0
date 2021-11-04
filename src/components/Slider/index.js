@@ -72,18 +72,17 @@ const Slider = () => {
                 })
 
                 // SLIDE 1
-
                 sliderTimeline.from('.slide-1', {opacity: 0.5, duration: 3}, 0)
                 sliderTimeline.from('.slide-1 .slide__image', {scale: 0.2, duration: 3}, 0)
                 sliderTimeline.to('.slide-1 .back', {width: '0', duration: 2}, '>')
-                sliderTimeline.to('.slide-1 ._slide-line', {width: '100%', duration: 2}, '<')
+                sliderTimeline.to('.slide-1 ._slide-line', {scaleX: 1, duration: 2}, '<')
                 sliderTimeline.to('.slide-1', { xPercent: -118, duration: 4 });
                 
 
                 // SLIDE 2
                 sliderTimeline.to('.slide-2', { xPercent: -118, duration: 4 }, '<');
                 sliderTimeline.to('.slide-2 .back', {width: '0', duration: 2}, '>')
-                sliderTimeline.to('.slide-2 ._slide-line', {width: '100%', duration: 2}, '<')
+                sliderTimeline.to('.slide-2 ._slide-line', {scaleX: 1, duration: 2}, '<')
             }
         })  
         
