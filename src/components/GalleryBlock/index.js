@@ -86,16 +86,16 @@ const GalleryBlock = () => {
                     }
                 })
 
-                imageTimeline.to(img1Ref.current, {scale: 1.4, yPercent: 20, ease: 'none'})
-                imageTimeline.to(img6Ref.current, {scale: 1.4, yPercent: -20, ease: 'none'})
-                imageTimeline.to(img2Ref.current, {scale: 1.4, yPercent: 20, ease: 'none'})
-                imageTimeline.to(img7Ref.current, {scale: 1.4, yPercent: -20, ease: 'none'})
-                imageTimeline.to(img3Ref.current, {scale: 1.4, yPercent: 20, ease: 'none'})
-                imageTimeline.to(img8Ref.current, {scale: 1.4, yPercent: -20, ease: 'none'})
-                imageTimeline.to(img4Ref.current, {scale: 1.4, yPercent: 20, ease: 'none'})
-                imageTimeline.to(img9Ref.current, {scale: 1.4, yPercent: -20, ease: 'none'})
-                imageTimeline.to(img5Ref.current, {scale: 1.4, yPercent: 20, ease: 'none'})
-                imageTimeline.to(img10Ref.current, {scale: 1.4, yPercent: -20, ease: 'none'})
+                imageTimeline.to(img1Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true" })
+                imageTimeline.to(img6Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true" })
+                imageTimeline.to(img2Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true"})
+                imageTimeline.to(img7Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true"})
+                imageTimeline.to(img3Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true"})
+                imageTimeline.to(img8Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true"})
+                imageTimeline.to(img4Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true"})
+                imageTimeline.to(img9Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true"})
+                imageTimeline.to(img5Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true"})
+                imageTimeline.to(img10Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true" })
                 gsap.to(img11Ref.current, {
                     ease: 'none',
                     scale: 1.8,
@@ -117,16 +117,16 @@ const GalleryBlock = () => {
                     }
                 })
 
-                imageTimeline2.to(img1Ref.current, {scale: 1.3, yPercent: -20, ease: 'none'})
-                imageTimeline2.to(img6Ref.current, {scale: 1.3, yPercent: 20, ease: 'none'})
-                imageTimeline2.to(img2Ref.current, {scale: 1.3, yPercent: -20, ease: 'none'})
-                imageTimeline2.to(img7Ref.current, {scale: 1.3, yPercent: 20, ease: 'none'})
-                imageTimeline2.to(img3Ref.current, {scale: 1.3, yPercent: -20, ease: 'none'})
-                imageTimeline2.to(img8Ref.current, {scale: 1.3, yPercent: 20, ease: 'none'})
-                imageTimeline2.to(img4Ref.current, {scale: 1.3, yPercent: -20, ease: 'none'})
-                imageTimeline2.to(img9Ref.current, {scale: 1.3, yPercent: 20, ease: 'none'})
-                imageTimeline2.to(img5Ref.current, {scale: 1.3, yPercent: -20, ease: 'none'})
-                imageTimeline2.to(img10Ref.current, {scale: 1.3, yPercent: 20, ease: 'none'})
+                imageTimeline2.to(img1Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img6Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img2Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img7Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img3Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img8Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img4Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img9Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img5Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
+                imageTimeline2.to(img10Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
                 // ====================================================================
 
                 // LINE

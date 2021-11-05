@@ -11,6 +11,7 @@ const ArticleImage = ({ image }) => {
             "(max-width: 400px)": function() {
                 gsap.to('.info-section .image-mask img', {
                     x: -135,
+                    force3D: "true",
                     scrollTrigger: {
                         trigger: '.info-section .image-mask img',
                         start: 'top bottom',
@@ -21,6 +22,7 @@ const ArticleImage = ({ image }) => {
         
                 gsap.to('.article-section .image-mask img', {
                     x: -135,
+                    force3D: "true",
                     scrollTrigger: {
                         trigger: '.article-section .image-mask img',
                         start: 'top bottom',
@@ -32,6 +34,7 @@ const ArticleImage = ({ image }) => {
             "(min-width: 993px)": function() {
                 gsap.to('.info-section .image-mask img', {
                     x: -135,
+                    force3D: "true",
                     scrollTrigger: {
                         trigger: '.info-section .image-mask img',
                         start: 'top bottom',
@@ -42,6 +45,7 @@ const ArticleImage = ({ image }) => {
         
                 gsap.to('.article-section .image-mask img', {
                     x: -135,
+                    force3D: "true",
                     scrollTrigger: {
                         trigger: '.article-section .image-mask img',
                         start: 'top bottom',
