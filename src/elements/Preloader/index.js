@@ -2,7 +2,6 @@ import React, { useRef, useCallback, useEffect, useState } from 'react'
 
 import { TextAnimationIn, TextAnimation } from '../../utils/TextAnimation'
 
-import logo from '../../img/icons/swim-1.svg'
 import './index.scss'
 
 
@@ -80,7 +79,6 @@ const Preloader = ({ setLoading, loading}) => {
                     <div className="player">
                         <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_rgau7hdv.json" speed="1" autoplay={animationStart ? true : false} style={{opacity: animationStart ? 1 : 0}}></lottie-player>
                     </div>
-                    <img src={logo} alt="Swim System" />
                 </div>
                 {/* <div ref={percentRef} className="percent" style={{opacity: animationStart ? 1 : 0}}></div> */}
             </div>

@@ -4,10 +4,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #010101;
     z-index: 101;
     transition: opacity 1s ease-in-out;
     pointer-events: none;
+    background: rgb(8,142,203);
+    background: radial-gradient(circle, rgba(8,142,203,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
 
     &.done {
         animation: done 1s ease-in-out 0.5s forwards;
@@ -40,6 +41,13 @@
     .blur-logo {
         position: relative;
         align-self: center;
+        width: 490px;
+        height: 490px;
+
+        @media(max-width: 993px) {
+            width: 200px;
+            height: 200px;
+        }
         
         lottie-player {
             position: absolute;
@@ -50,14 +58,10 @@
             max-height: 233px;
             transition: opacity 1s ease-in-out;
             z-index: 2;
-        }
-        img {
-            background: #088ECB;
-            opacity: 0.6;
-            filter: blur(70px);
-            width: 490px;
-            height: 490px;
-            border-radius: 100%;
+            @media(max-width: 993px) {
+                width: 160px;
+                height: 160px;
+            }
         }
     }
     &__body {

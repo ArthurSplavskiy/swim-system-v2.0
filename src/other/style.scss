@@ -51,6 +51,7 @@ html.lock {
     transform: scaleX(0);
     height: 1px;
     background: #828282;
+    will-change: transform;
 }
 
 .big-text {
@@ -177,6 +178,7 @@ html.lock {
         line-height: calc(78 / 65 * 100%);    
         color: #fff;
         overflow: hidden;
+        will-change: transform;
         @media(max-width: 992px) {
             font-size: 40px;
             line-height: calc(48 / 40 * 100%);    
@@ -213,10 +215,14 @@ html.lock {
     }
 
     img {
-        position: absolute;
-        max-width: none;
-        @media(max-width: 400px) {
-            max-width: 140%;
+        will-change: transform;
+        @media(min-width: 760px) {
+            position: absolute;
+            max-width: none;
+        }
+        @media(max-width: 760px) {
+            max-width: 100%;
+            height: auto;
         }
     }
 }
@@ -237,6 +243,7 @@ html.lock {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    will-change: transform;
     @media(min-width: 993px) {
         flex: 0 0 738/1200 *100%;
     }

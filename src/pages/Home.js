@@ -10,6 +10,8 @@ import Success from '../elements/Success'
 import Form from '../elements/Form'
 import { modalContext } from '../utils/context'
 
+import { vh } from '../utils/custom-vh'
+
 import {
   MobileMenu,
   Navbar,
@@ -69,6 +71,14 @@ function Home({ loading, setLoading }) {
     }
     
   }, [isOpen, loading])
+
+  useEffect(() => {
+    
+    vh()
+    
+  })
+
+  
 
   return (
     <modalContext.Provider value={{

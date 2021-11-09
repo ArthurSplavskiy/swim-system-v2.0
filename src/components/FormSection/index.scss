@@ -1,6 +1,8 @@
+@import '../../other/mixins.scss';
+
 .form-section {
     background: #088ECB;
-    height: 100vh;
+    @include vh();
     padding: 110px 0 64px 0;
     @media(max-width: 992px) {
         height: auto;

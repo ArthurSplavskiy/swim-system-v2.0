@@ -1,3 +1,5 @@
+@import '../../other/mixins.scss';
+
 .beams-section {
     background: url('../../img/noise.png') fixed;
     overflow: hidden;
@@ -9,7 +11,7 @@
         max-height: 270px;
     }
     @media(max-width: 992px) {
-        height: 80vh;
+        @include vh(80);
         &:before {
             content: '';
             height: 4px;
@@ -21,7 +23,7 @@
         }
     }
     @media(min-width: 992px) {
-        min-height: 100vh;
+        @include minVh();
     }
 
     &:after {
