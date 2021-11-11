@@ -1,5 +1,3 @@
-@import '../../other/mixins.scss';
-
 .gallery-block {
     overflow: hidden;
     margin-bottom: 220px;
@@ -63,7 +61,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        @include vh();
+        height: 100vh;
         background: #088ECB;
         z-index: -1;
         opacity: 0;
@@ -73,7 +71,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        @include vh();
+        height: 100vh;
         background: transparent;
         z-index: -1;
         opacity: 0;
@@ -83,10 +81,10 @@
         top: 0;
         left: 0;
         width: 100vw;
-        @include vh();
+        height: 100vh;
         background: transparent;
         .line-box {
-            @include vh(25);
+            height: 25vh;
             width: 0;
             border-bottom: 1px solid #fff;
         }
@@ -94,11 +92,11 @@
 }
 
 .letters-block {
-    @include vh();
+    height: 100vh;
     
     &__string {
         position: relative;
-        @include vh(25);
+        height: 25vh;
         
         &_left {
             .line {

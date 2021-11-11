@@ -1,5 +1,3 @@
-@import '../../other/mixins.scss';
-
 .beams-section {
     background: url('../../img/noise.png') fixed;
     overflow: hidden;
@@ -11,7 +9,7 @@
         max-height: 270px;
     }
     @media(max-width: 992px) {
-        @include vh(80);
+        height: 80vh;
         &:before {
             content: '';
             height: 4px;
@@ -23,7 +21,7 @@
         }
     }
     @media(min-width: 992px) {
-        @include minVh();
+        min-height: 100vh;
     }
 
     &:after {
@@ -53,6 +51,23 @@
                 height: 1000px;
             }
         }
+
+        // === /1280\ === \\
+        @media(max-width: 1280px) {
+            @media(max-height: 580px) {
+                top: -154px;
+            }
+        }
+        // === \1280/ === \\
+
+        // === /1366\ === \\
+        @media(max-width: 1366px) {
+            @media(max-height: 740px) {
+                top: -170px;
+            }
+        }
+        // === \1366/ === \\
+
     }
     .tables {
         width: 100%;
@@ -64,21 +79,30 @@
             margin: calc(100vh - 456px) 0 100px 0; // 356
         }
 
-        @media(min-width: 1280px) and (max-height: 780px) {
-            margin: calc(100vh - 456px) 0 100px 0; // 356
+        // @media(min-width: 1280px) and (max-height: 780px) {
+        //     margin: calc(100vh - 456px) 0 100px 0; // 356
+        // }
+        // @media(min-width: 1366px) and (max-height: 899px) {
+        //     margin: calc(100vh - 536px) 0 180px 0; // 356
+        // }
+        // @media(min-width: 1918px) {
+        //     margin: calc(100vh - 656px) 0 300px 0; // 356
+        // }
+        // @media(min-width: 2558px) {
+        //     margin: calc(100vh - 856px) 0 500px 0; // 356
+        // }
+        // @media(max-height: 796px) {
+        //     max-height: 720px;
+        // }
+
+        // === /1280\ === \\
+        @media(max-width: 1280px) {
+            @media(max-height: 720px) {
+                max-height: 600px;
+            }
         }
-        @media(min-width: 1366px) and (max-height: 899px) {
-            margin: calc(100vh - 536px) 0 180px 0; // 356
-        }
-        @media(min-width: 1918px) {
-            margin: calc(100vh - 656px) 0 300px 0; // 356
-        }
-        @media(min-width: 2558px) {
-            margin: calc(100vh - 856px) 0 500px 0; // 356
-        }
-        @media(max-height: 796px) {
-            max-height: 720px;
-        }
+        // === \1280/ === \\
+        
     }
     .table-1 {
         transform-origin: 50% 100%;
@@ -95,6 +119,96 @@
         @media(max-height: 796px) {
             max-height: 720px;
         }
+
+        // === /1280\ === \\
+        @media(max-width: 1280px) {
+            @media(max-height: 900px) {
+                bottom: -95%;
+            }
+            @media(max-height: 800px) {
+                bottom: -108%;
+            }
+            @media(max-height: 720px) {
+                bottom: -118%;
+            }
+            @media(max-height: 680px) {
+                bottom: -122%;
+            }
+            @media(max-height: 650px) {
+                bottom: -130%;
+            }
+            @media(max-height: 600px) {
+                bottom: -140%;
+            }
+            @media(max-height: 580px) {
+                bottom: -150%;
+            }
+        }
+        // === \1280/ === \\
+
+        // === /1366\ === \\
+        @media(max-width: 1366px) {
+            @media(max-height: 880px) {
+                bottom: -100%;
+            }
+            @media(max-height: 800px) {
+                bottom: -110%;
+            }
+            @media(max-height: 740px) {
+                bottom: -118%;
+            }
+            @media(max-height: 700px) {
+                bottom: -130%;
+            }
+            @media(max-height: 680px) {
+                bottom: -135%;
+            }
+            @media(max-height: 640px) {
+                bottom: -145%;
+            }
+            @media(max-height: 620px) {
+                bottom: -152%;
+            }
+            @media(max-height: 580px) {
+                bottom: -160%;
+            }
+        }
+        // === \1366/ === \\
+
+        // === /1440\ === \\
+        @media(max-width: 1440px) {
+            @media(max-height: 780px) {
+                bottom: -110%;
+            }
+            @media(max-height: 740px) {
+                bottom: -115%;
+            }
+            @media(max-height: 720px) {
+                bottom: -125%;
+            }
+            @media(max-height: 680px) {
+                bottom: -140%;
+            }
+            @media(max-height: 600px) {
+                bottom: -160%;
+            }
+        }
+        // === \1440/ === \\
+
+        // === /1680\ === \\
+        @media(max-width: 1680px) {
+            @media(max-height: 820px) {
+                bottom: -115%;
+            }
+            @media(max-height: 780px) {
+                bottom: -100%;
+            }
+            @media(max-height: 720px) {
+                bottom: -110%;
+            }
+        }
+        // === \1680/ === \\
+
     }
     .drops {
         z-index: 2;
@@ -108,6 +222,63 @@
         @media(max-height: 796px) {
             max-height: 720px;
         }
+
+        // === /1280\ === \\
+        @media(max-width: 1280px) {
+            @media(max-height: 900px) {
+                bottom: -90%;
+            }
+            @media(max-height: 720px) {
+                bottom: -110%;
+            }
+            @media(max-height: 600px) {
+                bottom: -115%;
+            }
+            @media(max-height: 580px) {
+                bottom: -130%;
+            }
+        }
+        // === \1280/ === \\
+
+        // === /1366\ === \\
+        @media(max-width: 1366px) {
+            @media(max-height: 700px) {
+                bottom: -120%;
+            }
+            @media(max-height: 640px) {
+                bottom: -135%;
+            }
+            @media(max-height: 580px) {
+                bottom: -145%;
+            }
+        }
+        // === \1366/ === \\
+
+         // === /1440\ === \\
+         @media(max-width: 1440px) {
+            @media(max-height: 780px) {
+                bottom: -110%;
+            }
+            @media(max-height: 720px) {
+                bottom: -120%;
+            }
+            @media(max-height: 680px) {
+                bottom: -140%;
+            }
+            @media(max-height: 600px) {
+                bottom: -160%;
+            }
+        }
+        // === \1440/ === \\
+
+        // === /1680\ === \\
+        @media(max-width: 1680px) {
+            @media(max-height: 780px) {
+                bottom: -120%;
+            }
+        }
+        // === \1680/ === \\
+
     }
     .tables-wrapper {
         display: flex;
@@ -118,6 +289,51 @@
         img {
             width: 100%;
             height: 100%;
+
+            // === /1280\ === \\
+            @media(max-width: 1280px) {
+                @media(max-height: 720px) {
+                    max-width: 80%;
+                }
+                @media(max-height: 580px) {
+                    max-width: 60%;
+                }
+            }
+            // === \1280/ === \\
+
+            // === /1366\ === \\
+            @media(max-width: 1366px) {
+                @media(max-height: 740px) {
+                    max-width: 80%;
+                }
+                @media(max-height: 640px) {
+                    max-width: 70%;
+                }
+            }
+            // === \1366/ === \\
+
+            // === /1440\ === \\
+            @media(max-width: 1440px) {
+                @media(max-height: 720px) {
+                    max-width: 90%;
+                }
+                @media(max-height: 700px) {
+                    max-width: 80%;
+                }
+                @media(max-height: 640px) {
+                    max-width: 70%;
+                }
+            }
+            // === \1440/ === \\
+
+            // === /1680\ === \\
+            @media(max-width: 1680px) {
+                @media(max-height: 780px) {
+                    max-width: 80%;
+                }
+            }
+            // === \1680/ === \\
+
         }
         .table-con {
             position: relative;

@@ -1,8 +1,6 @@
-@import '../../other/mixins.scss';
-
 .bubbles-block {
     margin: 220px 0;
-    @include minVh();
+    min-height: 100vh;
     @media(max-width: 992px) {
         min-height: 213px;
         margin: 0;

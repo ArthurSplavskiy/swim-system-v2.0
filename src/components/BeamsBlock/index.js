@@ -25,21 +25,6 @@ const BeamsContainer = styled.div`
         top: -80px;
     }
 
-    // .beam-top {
-    //     position: absolute;
-    //     width: 1px;
-    //     height: 15px;
-    //     background: #2C2C2C;
-    //     top: 78px;
-    //     left: 50%;
-    //     transform-origin: center center;
-    //     @media(max-width: 992px) {
-    //         display: none
-    //     }
-    //     @media(max-width: 1365px) {
-    //         top: 74px;
-    //     }
-    // }
     .lateral-left {
         left: 25%;
         transform: rotate(60deg);
