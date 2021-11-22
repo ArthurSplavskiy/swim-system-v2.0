@@ -97,6 +97,10 @@
     &__string {
         position: relative;
         height: 25vh;
+
+        div {
+            height: 100%;
+        }
         
         &_left {
             .line {
@@ -130,6 +134,8 @@
             line-height: 100%;
             text-transform: uppercase;
             white-space: nowrap;
+            display: flex;
+            align-items: center;
             
             span {
                 padding: 0 40px;

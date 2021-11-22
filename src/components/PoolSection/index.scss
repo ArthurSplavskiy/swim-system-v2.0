@@ -81,6 +81,8 @@
             @include adaptiv-value('margin-bottom', 45, 16, 1);
         }
         .line {
+            transform-origin: 0 0;
+            will-change: transform;
             width: 100%;
             background: #828282;
             height: 1px;

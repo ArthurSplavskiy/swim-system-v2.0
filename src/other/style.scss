@@ -18,6 +18,10 @@ html, body {
     -webkit-overflow-scrolling: touch;
 }
 
+button {
+    font-family: 'Formular', sans-serif;
+}
+
 html.lock {
     overflow: hidden;
 }
@@ -117,7 +121,6 @@ html.lock {
     }
     p:not(:last-child) {
         margin-bottom: 24px;
-        
     }
 }
 
@@ -169,6 +172,7 @@ html.lock {
     margin-bottom: 24px;
     @media(max-width: 1240px) {
         margin-top: 32px;
+        margin-bottom: -20px;
     }
 
     .front {
@@ -196,6 +200,7 @@ html.lock {
         color: #000;
         height: 100%;
         width: 100%;
+        will-change: transform;
         @media(max-width: 992px) {
             font-size: 40px;
             line-height: calc(48 / 40 * 100%);    
@@ -207,11 +212,9 @@ html.lock {
     overflow: hidden;
     position: relative;
     min-height: 836px;
-    @media(max-width: 400px) {
-        min-height: 460px;
-    }
-    @media(min-width: 401px) and (max-width: 992px)  {
-        min-height: 780px;
+    
+    @media(max-width: 992px)  {
+        min-height: 100px;
     }
 
     img {

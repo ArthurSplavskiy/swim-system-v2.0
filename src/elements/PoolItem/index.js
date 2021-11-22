@@ -18,8 +18,8 @@ const ParallaxItem = ({ image, description, parallaxTrigger, startAction, elemen
 
     useEffect(() => {
 
-        gsap.from(`.${elementTrigger} .linebar`, {
-            width: 0,
+        gsap.from(`.${elementTrigger} .linebar .line`, {
+            scaleX: 0,
             scrollTrigger: {
                 start: '-=500',
                 end: '+=200',

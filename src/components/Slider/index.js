@@ -46,13 +46,13 @@ const Slider = () => {
                 // SLIDE 1
                 sliderTimeline.from('.slide-1 .slide__image', {scale: 0, duration: 3}, 0)
                 sliderTimeline.to('.slide-1 .back', {width: '0', duration: 2}, 0)
-                sliderTimeline.to('.slide-1 ._slide-line', {width: '100%', duration: 2}, 0)
+                sliderTimeline.to('.slide-1 ._slide-line', {scaleX: 1, duration: 2}, 0)
                 
 
                 // SLIDE 2
                 sliderTimeline.from('.slide-2 .slide__image', {scale: 0, duration: 3}, 1)
                 sliderTimeline.to('.slide-2 .back', {width: '0', duration: 2}, 1)
-                sliderTimeline.to('.slide-2 ._slide-line', {width: '100%', duration: 2}, 1)
+                sliderTimeline.to('.slide-2 ._slide-line', {scaleX: 1, duration: 2}, 1)
             },
             "(min-width: 1241px)": function() {
                 let slides = gsap.utils.toArray(".slide");

@@ -8,31 +8,6 @@ const GalleryString = ({ direct }) => {
     useEffect(() => {
 
         ScrollTrigger.matchMedia({
-            "(max-width: 992px)": function() {
-                // LETTERS
-                gsap.to('.string-line_left', {
-                    xPercent: 300,
-                    duration: 4,
-                    // ease: 'none',
-                    scrollTrigger: {
-                        trigger: '.gallery-block',
-                        start: 'top top',
-                        scrub: 1,
-                    }
-                })
-
-                gsap.to('.string-line_right', {
-                    xPercent: -300,
-                    duration: 4,
-                    // ease: 'none',
-                    scrollTrigger: {
-                        trigger: '.gallery-block',
-                        start: 'top top',
-                        scrub: 1,
-                    }
-                })
-                // ===
-            },
 
             "(min-width: 993px)": function() {
                 // LETTERS

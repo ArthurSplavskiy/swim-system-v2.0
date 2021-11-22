@@ -287,6 +287,131 @@ const GalleryBlock = () => {
                     swim <img src={SwimIcon} alt="Swim System" />system
                     swim <img src={SwimIcon} alt="Swim System" />system
                     </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
+                    <div className="line">
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    swim <img src={SwimIcon} alt="Swim System" />system
+                    </div>
                 </div>
 
                 <div className="gallery-block__letters">

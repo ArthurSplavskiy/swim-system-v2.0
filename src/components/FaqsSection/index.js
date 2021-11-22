@@ -46,7 +46,7 @@ const FaqsSection = () => {
                     scrollTrigger: {
                         trigger: blurLogo.current,
                         start: 'top 300px',
-                        end: '+=1100',
+                        end: '+=1300',
                         scrub: true,
                         pin: true,
                         pinSpacing: true
