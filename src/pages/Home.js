@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 
 import Preloader from '../elements/Preloader'
 import Modal from '../elements/Modal'
@@ -28,6 +29,7 @@ import {
 } from '../components'
 
 gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollToPlugin)
 
 function Home({ loading, setLoading }) {
 
@@ -69,6 +71,12 @@ function Home({ loading, setLoading }) {
     }
     
   }, [isOpen, loading])
+
+  useEffect(() => {
+    
+    gsap.to(window, { scrollTo: {y: 0} })
+    
+  }, [])
 
   return (
     <modalContext.Provider value={{

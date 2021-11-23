@@ -111,6 +111,8 @@ const BeamsBlock = () => {
                 beamsTimeline.to('.parallax-swimmer', {yPercent: -115, scale: 1.19, duration: 4}, '<')
                 beamsTimeline.to('.drops', {yPercent: -196, duration: 4}, '<')
                 beamsTimeline.to('.drops', {opacity: 0.9, delay: 1.5})
+
+                beamsTimeline.scrollTrigger.refresh();
             },
 
             "(min-width: 1025px) and (max-width: 1365px)": function() {
@@ -138,6 +140,8 @@ const BeamsBlock = () => {
                 beamsTimeline.to('.parallax-swimmer', {yPercent: -94, scale: 1.19, duration: 4}, '<')
                 beamsTimeline.to('.drops', {yPercent: -146, duration: 4}, '<')
                 beamsTimeline.to('.drops', {opacity: 0.9, delay: 1.5})
+
+                beamsTimeline.scrollTrigger.refresh();
             },
 
             "(min-width: 1366px) and (max-width: 1917px)": function() {
@@ -165,6 +169,8 @@ const BeamsBlock = () => {
                 beamsTimeline.to('.parallax-swimmer', {yPercent: -94, scale: 1.19, duration: 4}, '<')
                 beamsTimeline.to('.drops', {yPercent: -156, duration: 4}, '<')
                 beamsTimeline.to('.drops', {opacity: 0.9, delay: 1.5})
+
+                beamsTimeline.scrollTrigger.refresh();
             },
 
             "(min-width: 1918px) and (max-width: 2558px)": function() {
@@ -190,6 +196,8 @@ const BeamsBlock = () => {
                 beamsTimeline.to('.table-2', {xPercent: -100, duration: 4}, '<')
                 beamsTimeline.to('.parallax-swimmer', {yPercent: -108, scale: 1.19, duration: 4}, '<')
                 beamsTimeline.to('.drops', {yPercent: -186, duration: 4}, '<')
+
+                beamsTimeline.scrollTrigger.refresh();
             },
         
             "(min-width: 2559px)": function() {
@@ -214,6 +222,8 @@ const BeamsBlock = () => {
                 beamsTimeline.to('.table-1', {scale: 1.3, duration: 4})
                 beamsTimeline.to('.parallax-swimmer', {yPercent: -128, scale: 1.19, duration: 4}, '<')
                 beamsTimeline.to('.drops', {yPercent: -208, duration: 4}, '<')
+
+                beamsTimeline.scrollTrigger.refresh();
             },
         
         });

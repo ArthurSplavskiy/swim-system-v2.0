@@ -1,3 +1,4 @@
+import gsap from 'gsap/all'
 import React, { useRef, useCallback, useEffect, useState } from 'react'
 
 import { TextAnimationIn, TextAnimation } from '../../utils/TextAnimation'
@@ -47,9 +48,25 @@ const Preloader = ({ setLoading, loading}) => {
     
     useEffect(() => {
         if(animationEnd) {
-            preloaderRef.current.classList.add('done')
+            
+            const t = gsap.timeline({ defaults: { duration: 2 } })
+
+            t.fromTo(preloaderRef.current, {
+                background: 'radial-gradient(circle, rgba(8,142,203,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%)'
+            }, {
+                background: 'radial-gradient(circle, rgba(8,142,203,0) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%)'
+            })
+            t.to(preloaderRef.current, {
+                background: 'radial-gradient(circle, rgba(8,142,203,0) 0%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%)'
+            })
+            gsap.to('.player', {
+                scale: 0
+            })
+            
             textLoadAnimation()
+            preloaderRef.current.classList.add('done')
             setLoading(false)
+            
         }
     }, [animationEnd, textLoadAnimation, setLoading])
     

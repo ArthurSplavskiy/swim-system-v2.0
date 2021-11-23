@@ -7,7 +7,6 @@
     z-index: 101;
     transition: opacity 1s ease-in-out;
     pointer-events: none;
-    background: rgb(8,142,203);
     background: radial-gradient(circle, rgba(8,142,203,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
 
     &.done {

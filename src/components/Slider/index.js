@@ -73,7 +73,7 @@ const Slider = () => {
 
                 // SLIDE 1
                 sliderTimeline.from('.slide-1', {opacity: 0.5, duration: 3}, 0)
-                sliderTimeline.from('.slide-1 .slide__image', {scale: 0.2, duration: 3}, 0)
+                sliderTimeline.from('.slide-1 .slide__image', {scale: 0.9, duration: 3}, 0)
                 sliderTimeline.to('.slide-1 .back', {width: '0', duration: 2}, '>')
                 sliderTimeline.to('.slide-1 ._slide-line', {scaleX: 1, duration: 2}, '<')
                 sliderTimeline.to('.slide-1', { xPercent: -118, duration: 4 });
@@ -92,7 +92,7 @@ const Slider = () => {
         <div id="team_mobile" className="slider-section section">
             <ContainerFluid className="_container">
                 <SectionHead>
-                До Ваших послуг персональні тренери - діючі плавці, призери України та Європи
+                    До Ваших послуг тренери - діючі плавці, призери України, та змагань у Европі
                 </SectionHead>
                 <SliderBody slidesCount={slidesData.length} className="slider-section__body">
                     {slidesData.map(data =>  <Slide id={data.id} data={data} key={data.id} />)}

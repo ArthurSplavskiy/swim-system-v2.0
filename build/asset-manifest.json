@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.54448a8c.chunk.css",
-    "main.js": "/static/js/main.0252e63a.chunk.js",
-    "main.js.map": "/static/js/main.0252e63a.chunk.js.map",
+    "main.js": "/static/js/main.2091ea30.chunk.js",
+    "main.js.map": "/static/js/main.2091ea30.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.041b61ce.js",
     "runtime-main.js.map": "/static/js/runtime-main.041b61ce.js.map",
     "static/js/2.9180e516.chunk.js": "/static/js/2.9180e516.chunk.js",
@@ -50,7 +50,7 @@
     "static/media/main-banner.c0d72057.png": "/static/media/main-banner.c0d72057.png",
     "static/media/index.scss": "/static/media/send-arrow.b846073d.svg",
     "static/media/not-snezko.3d2ead0a.png": "/static/media/not-snezko.3d2ead0a.png",
-    "static/media/pool-1.51e8ec5d.png": "/static/media/pool-1.51e8ec5d.png",
+    "static/media/pool-1.1cb635e4.png": "/static/media/pool-1.1cb635e4.png",
     "static/media/pool-2.36e82932.png": "/static/media/pool-2.36e82932.png",
     "static/media/quote.5801ea9b.svg": "/static/media/quote.5801ea9b.svg",
     "static/media/snezko.76090c2c.png": "/static/media/snezko.76090c2c.png",
@@ -66,6 +66,6 @@
     "static/js/runtime-main.041b61ce.js",
     "static/js/2.9180e516.chunk.js",
     "static/css/main.54448a8c.chunk.css",
-    "static/js/main.0252e63a.chunk.js"
+    "static/js/main.2091ea30.chunk.js"
   ]
 }
