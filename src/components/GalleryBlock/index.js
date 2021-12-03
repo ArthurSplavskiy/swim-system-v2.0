@@ -137,7 +137,6 @@ const GalleryBlock = () => {
                         start: 'top top',
                         end: '+=3000', // 4000
                         scrub: 1,
-                        
                     }
                 });
                 lineTimeline.to('.gallery-block .line-box_first', { width: '140%' }, 0)

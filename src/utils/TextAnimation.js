@@ -15,8 +15,7 @@ const TextAnimation = () => {
     rotate: 0,
     scrollTrigger: {
       trigger: '.form-section',
-      top: 'top top',
-      scrub: true
+      top: '-=200', // top top
     }
   })
 
@@ -30,8 +29,7 @@ const TextAnimation = () => {
       scrollTrigger: {
         trigger: text,
         start: '-=600',
-        end: '+=800',
-        scrub: true
+        end: '+=600', // +=800
       }
     })
     gsap.to(backSpan, {
@@ -39,8 +37,7 @@ const TextAnimation = () => {
       scrollTrigger: {
         trigger: text,
         start: '-=600',
-        end: '+=800',
-        scrub: true
+        end: '+=600', // +=800
       }
     })
   })
@@ -52,8 +49,7 @@ const TextAnimation = () => {
       scrollTrigger: {
         trigger: line,
         start: '-=600',
-        end: '+=800',
-        scrub: true
+        end: '+=600', // +=800
       }
     })
   })
@@ -66,7 +62,6 @@ const TextAnimation = () => {
         trigger: line,
         start: '-=800',
         end: '+=300',
-        scrub: true
       }
     })
   })
@@ -79,7 +74,6 @@ const TextAnimation = () => {
         trigger: line,
         start: '-=1000',
         end: '+=400',
-        scrub: true
       }
     })
   })

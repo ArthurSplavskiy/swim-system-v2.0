@@ -28,6 +28,8 @@ import {
   FormSection
 } from '../components'
 
+import { vh } from '../utils/custom-vh'
+
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(ScrollToPlugin)
 
@@ -75,8 +77,13 @@ function Home({ loading, setLoading }) {
   useEffect(() => {
     
     gsap.to(window, { scrollTo: {y: 0} })
+    vh();
     
   }, [])
+
+  window.addEventListener('resize', () => {
+    vh()
+  });
 
   return (
     <modalContext.Provider value={{

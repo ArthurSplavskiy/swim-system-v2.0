@@ -30,8 +30,8 @@ const SectionDescription = ({ column1, column2, column3, column4 = false, sectio
                 const timeline = gsap.timeline({
                     scrollTrigger: {
                         trigger: `${section} .section-description`,
-                        start: '-=800',
-                        end: '+=500',
+                        start: '-=700', // -=800
+                        end: '+=300', // +=500
                         scrub: true
                     }
                 })
@@ -54,7 +54,7 @@ const SectionDescription = ({ column1, column2, column3, column4 = false, sectio
                     scrollTrigger: {
                         trigger: `${section} .section-description`,
                         start: '-=700',
-                        end: '+=700',
+                        end: '+=300', //'+=700'
                         scrub: true
                     }
                 })

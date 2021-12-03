@@ -57,8 +57,6 @@ export class TextLinesReveal {
                 scrollTrigger: {
                     trigger: text,
                     top: '-=150', // 150
-                    end: '+=600', // 600
-                    scrub: true
                 }
             });
         })   

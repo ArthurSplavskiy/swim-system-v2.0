@@ -58,7 +58,6 @@ export class TextLinesRevealFast {
                     trigger: text,
                     top: '-=550', // 150
                     end: '+=200', // 600
-                    scrub: true
                 }
             });
         })   

@@ -26,7 +26,7 @@ const LocationSection = () => {
                     scrollTrigger: {
                         trigger: '.location-cart__anim-1 .image-wrapper',
                         start: 'top bottom',
-                        end: '+=800',
+                        end: '+=500', // +=800
                         scrub: 1
                     }
                 })
@@ -38,7 +38,7 @@ const LocationSection = () => {
                     scrollTrigger: {
                         trigger: '.location-cart__anim-2 .image-wrapper',
                         start: 'top bottom',
-                        end: '+=800',
+                        end: '+=500', // +=800
                         scrub: 1
                     }
                 })

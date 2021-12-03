@@ -19,8 +19,8 @@
 }
 
 @mixin vh($value: 100) {
-	height: #{$value * 1vh};
-	height: calc(var(--vh, 1vh) * #{$value});
+	height: #{$value * 1vh}!important;
+	height: calc(var(--vh, 1vh) * #{$value})!important;
 }
 
 @mixin minVh($value: 100) {

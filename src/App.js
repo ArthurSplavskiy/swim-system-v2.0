@@ -24,6 +24,16 @@ function App() {
     setIsLanguage({...isLanguage, currentLanguage: newCurrentLanguage, languages:fallbackLang })
   }
   
+  //const windowWidth = window.innerWidth
+
+  // window.addEventListener('resize', (e) => {
+
+  //   if(windowWidth !== e.target.innerWidth) {
+  //     window.location.reload(true);
+  //   }
+    
+  // })
+  
   return (
     <languageContext.Provider value={{
       changeLanguage,
