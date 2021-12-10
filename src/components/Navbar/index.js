@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import gsap from 'gsap'
 import styled from 'styled-components'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+//import { useTranslation } from 'react-i18next'
+import '../../utils/i18n'
 
 import { menuData } from '../../data/MenuData'
 import { Container } from '../../globalStyle'
@@ -48,25 +50,14 @@ const MenuBars = styled.div`
     }
 `
 
-const LanguageItems = styled.div`
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: ${({ isLanguage }) => isLanguage.state ?  'translateY(42%) translateX(-50%)' : 'translateY(-180%) translateX(-50%)'};
-    background: #fff;
-    padding: 12px 13px 12px 11px;
-    width: 48px;
-    display: flex;
-    flex-direction: column;
-    transition: transform .2s ease-in-out;
-    z-index: 3;
-    button {
-        cursor: pointer;
-    }
-`
-
 const Navbar = (props) => {
     const langContext = useContext(languageContext);
+    // const { t } = useTranslation()
+
+    // const menuData = t('menuLinks', { returnObjects: true })
+    // console.log(menuData)
+
+    console.log('RENDER NAVBAR')
 
     const handler = () => {
         
@@ -108,13 +99,14 @@ const Navbar = (props) => {
                         </div>
                         <div 
                             className="lang-toggle lang-toggle_desktop"
-                            onMouseEnter={() => langContext.setIsLanguage({...langContext.isLanguage, state: true})}
-                            onMouseLeave={() => langContext.setIsLanguage({...langContext.isLanguage, state: false})}
                         >
                             <div className="lang-toggle__current _text-on-load">{langContext.isLanguage.currentLanguage}</div>
-                            <LanguageItems isLanguage={langContext.isLanguage}>
+                            {/* <LanguageItems isLanguage={langContext.isLanguage}>
                                 {langContext.isLanguage.languages.map((lang, i) => <button className="lang-toggle__item" onClick={() => langContext.changeLanguage(lang)} key={i}>{lang}</button>)}
-                            </LanguageItems>
+                            </LanguageItems> */}
+                            <div className="lang-toggle__list">
+                                {langContext.isLanguage.languages.map((lang, i) => <button className="lang-toggle__item" onClick={() => langContext.changeAppLanguage(lang)} key={i}>{lang}</button>)}
+                            </div>
                         </div>
                     </div>            
                 </div>

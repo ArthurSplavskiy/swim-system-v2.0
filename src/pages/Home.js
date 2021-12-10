@@ -43,6 +43,13 @@ function Home({ loading, setLoading }) {
 
   const rootElement = document.documentElement;
 
+  gsap.config({
+    autoSleep: 60,
+    force3D: true,
+    // nullTargetWarn: false,
+    // trialWarn: false,
+  });
+
   useEffect(() => {
     timetableModalActive ? setIsLock(false) : setIsLock(true)
 
@@ -83,6 +90,7 @@ function Home({ loading, setLoading }) {
 
   window.addEventListener('resize', () => {
     vh()
+    ScrollTrigger.refresh()
   });
 
   return (

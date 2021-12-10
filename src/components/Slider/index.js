@@ -38,8 +38,7 @@ const Slider = () => {
                 const sliderTimeline = gsap.timeline({
                     scrollTrigger: {
                         trigger: ".slider-section__body",
-                        scrub: 1,
-                        start: "-=1500",
+                        start: "-=1500"
                     }
                 })
 

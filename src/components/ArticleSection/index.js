@@ -27,7 +27,7 @@ const ArticleSection = () => {
                     <div className="content">
                         <div className="image-side">
                             <ArticleImage image={img3} />
-                            <h2 className="_text-on-scroll">Тренування на відкритій воді</h2>
+                            <h2 className="_text-on-scroll"><span>Тренування на </span> відкритій воді</h2>
                         </div>
                         <div className="content-side">
                             <div className="text _text-opacity">

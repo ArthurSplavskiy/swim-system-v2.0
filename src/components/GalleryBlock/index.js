@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styled from 'styled-components'
+
+import Scene from './scene'
 
 import GalleryString from '../../data/GalleryString'
 
@@ -21,17 +23,6 @@ import './index.scss'
 
 
 const GalleryBlock = () => {
-    const img1Ref = useRef()
-    const img2Ref = useRef()
-    const img3Ref = useRef()
-    const img4Ref = useRef()
-    const img5Ref = useRef()
-    const img6Ref = useRef()
-    const img7Ref = useRef()
-    const img8Ref = useRef()
-    const img9Ref = useRef()
-    const img10Ref = useRef()
-    const img11Ref = useRef()
 
     const LongString = styled.div`
         .string-line_left {
@@ -54,7 +45,7 @@ const GalleryBlock = () => {
 
                 // FOTO GaLLeRY
                 gsap.to('.image-block__top', {
-                    xPercent: -91,
+                    xPercent: -96, // -91
                     ease: 'none',
                     scrollTrigger: {
                         trigger: '.fixed-trigger',
@@ -65,7 +56,7 @@ const GalleryBlock = () => {
                     }
                 })
                 gsap.to('.image-block__bottom', {
-                    xPercent: -91,
+                    xPercent: -96, // -91
                     ease: 'none',
                     scrollTrigger: {
                         trigger: '.fixed-trigger',
@@ -76,65 +67,12 @@ const GalleryBlock = () => {
                     }
                 })
 
-                const imageTimeline = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: '.fixed-trigger',
-                        start: "+=1700",
-                        end: "+=9500", // 9000
-                        scrub: 1,
-                        ease: 'none'
-                    }
-                })
-
-                imageTimeline.to(img1Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true" })
-                imageTimeline.to(img6Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true" })
-                imageTimeline.to(img2Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true"})
-                imageTimeline.to(img7Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true"})
-                imageTimeline.to(img3Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true"})
-                imageTimeline.to(img8Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true"})
-                imageTimeline.to(img4Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true"})
-                imageTimeline.to(img9Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true"})
-                imageTimeline.to(img5Ref.current, {scale: 1.4, yPercent: 20, ease: 'none', force3D:"true"})
-                imageTimeline.to(img10Ref.current, {scale: 1.4, yPercent: -20, ease: 'none', force3D:"true" })
-                gsap.to(img11Ref.current, {
-                    ease: 'none',
-                    scale: 1.8,
-                    scrollTrigger: {
-                        trigger: img11Ref.current,
-                        start: "+=12000",
-                        end: "+=2000",
-                        scrub: 1
-                    }
-                })
-
-                const imageTimeline2 = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: '.fixed-trigger2',
-                        start: "+=3000", // 2400
-                        end: "+=9500", // 10000
-                        scrub: 1,
-                        ease: 'none'
-                    }
-                })
-
-                imageTimeline2.to(img1Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img6Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img2Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img7Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img3Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img8Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img4Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img9Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img5Ref.current, {scale: 1.3, yPercent: -20, ease: 'none', force3D:"true"})
-                imageTimeline2.to(img10Ref.current, {scale: 1.3, yPercent: 20, ease: 'none', force3D:"true"})
-                // ====================================================================
-
                 // LINE
                 const lineTimeline = gsap.timeline({
                     defaults: { delay: 0.1 },
                     scrollTrigger: {
                         trigger: '.gallery-block',
-                        start: 'top top',
+                        start: '-1000 top',
                         end: '+=3000', // 4000
                         scrub: 1,
                     }
@@ -156,7 +94,26 @@ const GalleryBlock = () => {
                     }
                 })
                 // ====================================================================
-           }
+
+                // THREE IMAGE REVEAL
+                let proxy = { skew: 0 },
+                    skewSetter = gsap.quickSetter(".image-block__item-inner", "skewX", "deg"),
+                    clamp = gsap.utils.clamp(-20, 20); 
+
+                gsap.set(".image-block__item-inner", {transformOrigin: "right center", force3D: true});
+                
+                ScrollTrigger.create({
+                    onUpdate: self => {
+                        let skew = clamp(self.getVelocity() / -300);
+
+                        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+                            proxy.skew = skew;
+                            gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+                        }
+                    }
+                })
+                // ====================================================================
+            }
         })
 
     }, [])
@@ -441,40 +398,62 @@ const GalleryBlock = () => {
                 <div className="gallery-block__image">
                     <div className="image-block">
                         <div className="image-block__top">
-                            <div ref={img1Ref} className="image-block__item">
-                                <img src={img1} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img1} />
+                                </div>
                             </div>
-                            <div ref={img2Ref} className="image-block__item">
-                                <img src={img3} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img3} />
+                                </div>
                             </div>
-                            <div ref={img3Ref} className="image-block__item">
-                                <img src={img5} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img5} />
+                                </div>
                             </div>
-                            <div ref={img4Ref} className="image-block__item">
-                                <img src={img7} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img7} />
+                                </div>
                             </div>
-                            <div ref={img5Ref} className="image-block__item">
-                                <img src={img9} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img9} />
+                                </div>
                             </div>
                         </div>
                         <div className="image-block__bottom">
-                            <div ref={img6Ref} className="image-block__item">
-                                <img src={img2} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img2} />
+                                </div>
                             </div>
-                            <div ref={img7Ref} className="image-block__item">
-                                <img src={img4} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img4} />
+                                </div>
                             </div>
-                            <div ref={img8Ref} className="image-block__item">
-                                <img src={img6} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img6} />
+                                </div>
                             </div>
-                            <div ref={img9Ref} className="image-block__item">
-                                <img src={img8} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img8} />
+                                </div>
                             </div>
-                            <div ref={img10Ref} className="image-block__item">
-                                <img src={img10} alt="Swim System" />
+                            <div className="image-block__item">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img10} />
+                                </div>
                             </div>
-                            <div ref={img11Ref} className="image-block__item last-image">
-                                <img src={img11} alt="Swim System" />
+                            <div className="image-block__item last-image">
+                                <div className="image-block__item-inner">
+                                    <Scene image={img11} cameraPosition={[0, 0, 2.7]} geometryPosition={[0.8, 0.5, 16, 16]} />
+                                </div>
                             </div>
                         </div>
                     </div>

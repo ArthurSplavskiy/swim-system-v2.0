@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
@@ -11,7 +11,18 @@ import './index.scss'
 
 const BeamsBlock = () => {
 
+    let tablesItem = useRef(null)
+    let dropsItem = useRef(null)
+    let swimmerImage = useRef(null)
+    
     useEffect(() => {
+        let swimmerHeight
+
+        swimmerImage.current.onload = () => {
+            swimmerHeight = swimmerImage.current.offsetHeight
+            tablesItem.current.style.bottom = (swimmerHeight / 3.1) + 'px';
+            dropsItem.current.style.bottom = - (swimmerHeight / 1.2) + 'px';
+        }
 
         ScrollTrigger.matchMedia({
 
@@ -26,24 +37,23 @@ const BeamsBlock = () => {
                         //pinSpacing: false
                     }
                 })
-        
+
                 beamsTimeline.to('.beam-top', {scaleX: 1500, duration: 3}, 0)
-                beamsTimeline.to('.beam', {height: 1000, duration: 3}, 0)
-                beamsTimeline.to('.parallax-swimmer', {yPercent: 100, scale: 1.2, duration: 2}, 1)
-                beamsTimeline.to('.drops', {yPercent: -200, duration: 2}, '<')
+                beamsTimeline.to('.beam', {scaleY: 40, duration: 3}, 0)
+                beamsTimeline.to('.parallax-swimmer', {yPercent: -80, scale: 1.2, duration: 2}, 1)
+                beamsTimeline.to('.drops', {yPercent: -125, duration: 2}, '<')
         
                 beamsTimeline.to('.tables', {xPercent: -170, duration: 8})
         
                 // parallax scale
                 beamsTimeline.to('.table-1', {scale: 1.7, duration: 4})
                 beamsTimeline.to('.table-2', {xPercent: -100, duration: 4}, '<')
-                beamsTimeline.to('.parallax-swimmer', {yPercent: 110, scale: 1.19, duration: 4}, '<')
-                beamsTimeline.to('.drops', {yPercent: -196, duration: 4}, '<')
+                beamsTimeline.to('.parallax-swimmer', {yPercent: -84, scale: 1.2, duration: 4}, '<')
+                beamsTimeline.to('.drops', {yPercent: -135, duration: 4}, '<')
                 beamsTimeline.to('.drops', {opacity: 0.9, delay: 1.5})
-
+    
                 beamsTimeline.scrollTrigger.refresh();
             },
-        
         });
 
     }, [])
@@ -59,7 +69,7 @@ const BeamsBlock = () => {
                 <div className="beam lateral-right"></div>
             </div>
 
-            <div className="tables">
+            <div ref={tablesItem} className="tables">
                 <div className="tables-wrapper">
                     <div className="table-con first-con">
                         <img className="table table-3" src={table3} alt="Swim System" />
@@ -74,10 +84,10 @@ const BeamsBlock = () => {
             </div>
 
             <div className="parallax-swimmer">
-                <img src={parallaxSwimmer} alt="Swim System" />
+                <img ref={swimmerImage} src={parallaxSwimmer} alt="Swim System" />
             </div>
             
-            <div className="drops">
+            <div ref={dropsItem} className="drops">
                 <img src={drops} alt="Swim System" />
             </div>
 

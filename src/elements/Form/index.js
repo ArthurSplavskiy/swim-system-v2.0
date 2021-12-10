@@ -85,6 +85,7 @@ const Form = ({ animation }) => {
                                     name: e.target.value
                                 })} 
                             />
+                            <div className="_line-on-scroll"></div>
                         </div>
                         
                         <div className="form__input-group">
@@ -99,6 +100,7 @@ const Form = ({ animation }) => {
                                     phoneNumber: e.target.value
                                 })} 
                             />
+                            <div className="_line-on-scroll"></div>
                         </div>
 
                         <div className="form__input-group">
@@ -113,6 +115,7 @@ const Form = ({ animation }) => {
                                     message: e.target.value
                                 })} 
                             />
+                            <div className="_line-on-scroll"></div>
                         </div>
 
                         <button 

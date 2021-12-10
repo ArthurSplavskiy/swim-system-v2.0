@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useTranslation } from 'react-i18next'
 
 import { Container } from '../../globalStyle'
 
@@ -10,6 +11,12 @@ import './index.scss'
 
 
 const PromoSection = () => {
+    const { t } = useTranslation()
+
+    // useEffect(() => {
+    //     console.log('RENDER PROMO SECTION')
+    // }, [ready, langContext])
+    console.log('RENDER PROMO')
 
     useEffect(() => {
 
@@ -114,7 +121,7 @@ const PromoSection = () => {
                 <Container>
                     <h1 className="promo-heading">
                         <div className="promo-title">
-                            <p className="_text-on-load">Swim System це сила та енергія рухів</p>
+                            <p className="_text-on-load">{t('promo.title')}</p>
                         </div>
                     </h1>
                 </Container>
@@ -126,15 +133,14 @@ const PromoSection = () => {
                         <div className="promo-headcon">
                             <h1 className="promo-heading">
                                 <div className="promo-title">
-                                    <p className="front _text-on-load">Swim System це сила та енергія рухів</p>
-                                    <p className="back _text-on-load">Swim System це сила та енергія рухів</p>
+                                    <p className="front _text-on-load">{t('promo.title')}</p>
+                                    <p className="back _text-on-load">{t('promo.title')}</p>
                                 </div>
                             </h1>
                         </div>
                         <div className="promo-description">
                             <p className="_text-on-load">
-                            Swim System - ми молода, та амбіційна команда з плавання. Результати якої складаються з цікавого і послідовного тренувального процесу, помножена на
- здорову атмосферу і захопленість людей. Це допомагає досягати цілей і робити себе краще.
+                                {t('promo.subtitle')}
                             </p>
                         </div>
                     </div>
@@ -143,7 +149,7 @@ const PromoSection = () => {
             <div className="promo-description__mobile">
                 <Container>
                     <p className="_text-on-load">
-                        Swim System - це багатогранна складова, яка складається з цікавого і послідовного тренувального процесу, помножена на здорову атмосферу і захопленість людей. Це допомагає досягати цілей і робити себе краще.
+                        {t('promo.subtitle')}
                     </p>
                 </Container>
             </div>

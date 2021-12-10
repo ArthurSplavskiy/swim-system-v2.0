@@ -151,7 +151,7 @@ const FaqSpoller = ({ data, arr }) => {
 
     return (
         <>
-            <div className="_line-bar-middle"></div>
+            <div className="_line-on-scroll"></div>
             <div className="faq-spoller">
                 <button 
                     ref={spollerButton}
@@ -168,7 +168,7 @@ const FaqSpoller = ({ data, arr }) => {
                 </button>
                 <div className="faq-spoller__body">{data.body.map((pContent, inx) => <p className="_text-on-action" key={data.body[inx]}>{pContent}</p>)}</div>
             </div>
-            {data.id === arr.length ? <div className="_line-bar-middle"></div> : null}
+            {data.id === arr.length ? <div className="_line-on-scroll"></div> : null}
         </>
     )
 }

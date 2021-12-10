@@ -1,7 +1,8 @@
 .navbar {
-    position: relative;
+    position: absolute;
+    top: 0;
+    width: 100%;
     min-height: 104px;
-    background: #000;
     display: flex;
     align-items: center;
     z-index: 100;
@@ -41,9 +42,15 @@
     }
 
     .lang-toggle {
-        pointer-events: none;
+        //pointer-events: none;
         position: relative;
         min-width: 30px;
+
+        &:hover {
+            .lang-toggle__list {
+                transform: translateY(42%) translateX(-50%);
+            }
+        }
 
         @media(max-width: 992px) {
             width: 25px;
@@ -53,6 +60,23 @@
             }
         }
 
+        &__list {
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateY(-180%) translateX(-50%);
+            background: #fff;
+            padding: 12px 13px 12px 11px;
+            width: 48px;
+            display: flex;
+            flex-direction: column;
+            transition: transform .2s ease-in-out;
+            z-index: 3;
+
+            button {
+                cursor: pointer;
+            }
+        }
         &__item {
             color: #010101;
             font-weight: 700;

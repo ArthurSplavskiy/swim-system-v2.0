@@ -21,8 +21,8 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     lng: 'ua',
-    fallbackLng: 'ru',
-    whitelist: ['ua', 'ru'],
+    fallbackLng: 'en',
+    whitelist: ['ua', 'en'],
     debug: false,
     ns: ['translation'],
     react: {

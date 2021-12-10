@@ -111,21 +111,27 @@
 
             &__input-group {
                 overflow: hidden;
+                margin: 0 0 40px 0;
+
+                @media(max-width: 992px) {
+                    margin: 0 0 24px 0;
+                }
+
+                ._line-on-scroll {
+                    background: #fff;
+                }
             }
             &-input {
                 width: 100%;
                 font-size: 64px;
                 font-weight: 700;
                 color: #fff;
-                margin: 0 0 40px 0;
                 border: none;
-                border-bottom: 1px solid #fff;
                 background: none;
                 outline: none;
                 padding-bottom: 4px;
                 @media(max-width: 992px) {
                     font-size: 32px;
-                    margin: 0 0 24px 0;
                 }
 
                 &::placeholder {

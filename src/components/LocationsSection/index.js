@@ -27,7 +27,6 @@ const LocationSection = () => {
                         trigger: '.location-cart__anim-1 .image-wrapper',
                         start: 'top bottom',
                         end: '+=500', // +=800
-                        scrub: 1
                     }
                 })
                 gsap.from('.location-cart__anim-2 .image-wrapper', {
@@ -39,7 +38,6 @@ const LocationSection = () => {
                         trigger: '.location-cart__anim-2 .image-wrapper',
                         start: 'top bottom',
                         end: '+=500', // +=800
-                        scrub: 1
                     }
                 })
             }
@@ -51,7 +49,7 @@ const LocationSection = () => {
         <section id="locations_mobile" className="location-section section">
             <Container>
                 <SectionHead>
-                Ми обрали зручні локації для проведення тренувань у басейнах Києва
+                    Ми обрали зручні локації для проведення тренувань у басейнах Києва
                 </SectionHead>
                 <SectionDescription 
                     column1='2 спортивні  басейна' 
@@ -69,8 +67,8 @@ const LocationSection = () => {
                                 </div>
                                 
                                 <div className="text-content">
-                                    <p className="_text-on-scroll_fast">Басейн спорткомплексу НТУУ КПІ</p>
-                                    <p className="_text-on-scroll_fast">Площа - 25 х 50 м. Глибина - від 1,8 м. До 7,5 м. 24 доріжки. Очищення води басейну відбувається гіпохлоритом натрію через високоякісне обладнання американського виробника.</p>
+                                    <p className="_text-on-scroll">Басейн спорткомплексу НТУУ КПІ</p>
+                                    <p className="_text-on-scroll">Площа - 25 х 50 м. Глибина - від 1,8 м. До 7,5 м. 24 доріжки. Очищення води басейну відбувається гіпохлоритом натрію через високоякісне обладнання американського виробника.</p>
                                 </div>
                             </div>
                         </div>
@@ -80,8 +78,8 @@ const LocationSection = () => {
                                     <img src={pool2} alt="Басейн спорткомплексу НТУУ КПІ" />
                                 </div>
                                 <div className="text-content">
-                                    <p className="_text-on-scroll_fast">Басейн "Спорткомплекс НПУ ім. М. Драгоманова"</p>
-                                    <p className="_text-on-scroll_fast">Великий басейн 25 м х 12 м (6 доріжок), глибина 2 м. Очищення води басейну відбувається гіпохлоритом натрію через високоякісне обладнання американського виробника.</p>
+                                    <p className="_text-on-scroll">Басейн "Спорткомплекс НПУ ім. М. Драгоманова"</p>
+                                    <p className="_text-on-scroll">Великий басейн 25 м х 12 м (6 доріжок), глибина 2 м. Очищення води басейну відбувається гіпохлоритом натрію через високоякісне обладнання американського виробника.</p>
                                 </div>
                             </div>
                         </div>

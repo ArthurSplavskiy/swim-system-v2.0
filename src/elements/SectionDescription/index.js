@@ -30,32 +30,32 @@ const SectionDescription = ({ column1, column2, column3, column4 = false, sectio
                 const timeline = gsap.timeline({
                     scrollTrigger: {
                         trigger: `${section} .section-description`,
-                        start: '-=700', // -=800
-                        end: '+=300', // +=500
-                        scrub: true
+                        start: '100px bottom'
                     }
                 })
 
                 timeline.to(`${section} .column-1`, {
+                    duration: 0.2,
                     opacity: 1
-                }, 1)
+                })
                 timeline.to(`${section} .column-2`, {
+                    duration: 0.2,
                     opacity: 1
-                }, 2)
+                })
                 timeline.to(`${section} .column-3`, {
+                    duration: 0.2,
                     opacity: 1
-                }, 3)
+                })
                 timeline.to(`${section} .column-4`, {
+                    duration: 0.2,
                     opacity: 1
-                }, 4)
+                })
 
                 gsap.to(`${section} .underline`, {
                     scaleX: 1,
                     scrollTrigger: {
                         trigger: `${section} .section-description`,
-                        start: '-=700',
-                        end: '+=300', //'+=700'
-                        scrub: true
+                        start: '100px bottom'
                     }
                 })
             
@@ -74,7 +74,7 @@ const SectionDescription = ({ column1, column2, column3, column4 = false, sectio
             <div className="column-4">
                 <button onClick={() => columnLinkHandler()}><img src={infoIcon} alt="Swim System" />ДЕТАЛЬНИЙ РОЗКЛАД</button>
             </div>} 
-            <div className="underline"></div>
+            <div className="_line-on-scroll"></div>
         </div>
     )
 }

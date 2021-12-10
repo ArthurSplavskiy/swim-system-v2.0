@@ -50,12 +50,12 @@ const InfoSection = () => {
                                 </div>
                                 
                                 <div className="content-side__body">
-                                    <div className="_line-bar"></div>
+                                    <div className="_line-on-scroll"></div>
                                     <div className="text">
                                         <p className="_text-on-scroll">Саме системні та цікаві тренування з командою - дозволять тобі покращити техніку рухів, з користю та наснагою провести час й звісно досягти своєї мети! Мета у всіх різна- у когось це швидкість, у когось здоров'я, у інших медалі, саме з командою ти розділиш успіхи.</p>
                                         <Button text="ДЕТАЛЬНИЙ РОЗКЛАД" big={true} modal="timetable" />
                                     </div>
-                                    <div className="_line-bar-bottom"></div>
+                                    <div className="_line-on-scroll"></div>
                                 </div>
                             </div>
                         </div>

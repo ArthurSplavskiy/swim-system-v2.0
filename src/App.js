@@ -1,18 +1,25 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import { languageContext } from './utils/context'
 import { BrowserRouter, Route, Switch, Redirect  } from "react-router-dom";
+import { useTranslation } from 'react-i18next'
+import { splitText, fadeInScroll, fadeInOnLoad } from './utils/onScrollAnimation'
+
 
 function App() {
+  const { i18n } = useTranslation()
   const [loading, setLoading] = useState(true)
+  const [langStatus, setLangStatus] = useState(false)
   const [isLanguage, setIsLanguage] = useState({
     state: false,
-    currentLanguage: 'Укр',
-    languages: ['Рус', 'En'],
-    allLanguages: ['Укр', 'Рус', 'En']
+    currentLanguage: 'ua',
+    languages: ['en'],
+    allLanguages: ['ua', 'en']
   });
-  const changeLanguage = lang => {
+  
+  const changeAppLanguage = lang => {
+    console.log('CHANGE APP LANG ', lang)
     const fallbackLang = isLanguage.languages.map(item => {
         if(item === lang) {
             item = isLanguage.currentLanguage
@@ -22,7 +29,19 @@ function App() {
     const newCurrentLanguage = lang
 
     setIsLanguage({...isLanguage, currentLanguage: newCurrentLanguage, languages:fallbackLang })
+
+    i18n.changeLanguage(lang)
+    console.log('after change Lang')
+    setLangStatus(prev => !prev)
   }
+ 
+  useEffect(() => {
+    new splitText()
+    console.log('RENDER CCC')
+
+    new fadeInScroll()
+    new fadeInOnLoad()
+  }, [langStatus])
   
   //const windowWidth = window.innerWidth
 
@@ -36,7 +55,7 @@ function App() {
   
   return (
     <languageContext.Provider value={{
-      changeLanguage,
+      changeAppLanguage,
       isLanguage,
       setIsLanguage
     }}>

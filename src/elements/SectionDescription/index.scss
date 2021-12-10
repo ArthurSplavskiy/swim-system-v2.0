@@ -8,17 +8,12 @@
         flex-wrap: wrap;
     }
 
-    .underline {
-        width: 100%;
-        background: #828282;
-        height: 1px;
+    ._line-on-scroll {
 
         @media(min-width: 993px) {
             position: absolute;
             left: 0;
             top: 100%;
-            transform-origin: 0 0;
-            transform: scaleX(0);
         }
         @media(max-width: 992px) {
             margin: 16px 0;

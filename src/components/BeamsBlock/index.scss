@@ -1,11 +1,27 @@
 @import '../../other/mixins.scss';
 
 .beams-section {
-    //background: url('../../img/noise.png') fixed;
-    background-color: rgba(37, 179, 60, 0.767);
+    background: url('../../img/noise.png') fixed;
     overflow: hidden;
     position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: #010101;
+        opacity: 0.99;
+        @media(min-width: 993px) {
+            z-index: -1;
+        }
+    }
     
+    // width
     @media(max-width: 375px) {
         max-height: 270px;
     }
@@ -34,23 +50,6 @@
         min-height: 768px;
     }
 
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     z-index: 1;
-    //     background: #010101;
-    //     opacity: 0.99;
-    //     @media(min-width: 993px) {
-    //         z-index: -1;
-    //     }
-    // }
-
     // ==================== || BEAMS { || ==================== \\
     .beams {
         z-index: 3;
@@ -58,6 +57,7 @@
         height: 15px;
         position: relative;
 
+        // width
         @media(min-width: 993px) {
             z-index: 2;
         }
@@ -75,6 +75,8 @@
         .lateral-left {
             left: 25%;
             transform: rotate(60deg);
+
+            // width
             @media(max-width: 992px) {
                 left: 50%;
             }
@@ -85,6 +87,8 @@
         .center-left {
             left: 40%;
             transform: rotate(45deg);
+
+            // width
             @media(max-width: 992px) {
                 left: 55%;
             }
@@ -95,6 +99,8 @@
         .center-right {
             right: 40%;
             transform: rotate(-45deg);
+
+            // width
             @media(max-width: 992px) {
                 right: 55%;
             }
@@ -106,6 +112,8 @@
             right: 25%;
             transform: rotate(-60deg);
             height: 78px;
+
+            // width
             @media(max-width: 992px) {
                 right: 50%;
             }
@@ -120,6 +128,8 @@
             height: 50px;
             background: #2C2C2C;
             transform-origin: 0 0;
+
+            // width
             @media(max-width: 992px) {
                 width: 4px;
             }
@@ -134,51 +144,62 @@
 
     // ==================== || TABLES { || ==================== \\
     .tables {
+        position: absolute;
         width: 100%;
         z-index: 3;
         transform: translate(50%, -90%);
+
+        // width
         @media(min-width: 993px) {
             z-index: 2;
             transform: translateX(120%);
-            margin: calc(100vh - 456px) 0 100px 0; // 356
+        }
+        @media(max-width: 993px) {
+            bottom: 5%!important;
         }
         @media(max-width: 530px) {
+            bottom: 12%!important;
             transform: translate(50%, -70%);
         }
 
-        @media(max-height: 796px) {
-            max-height: 720px;
-        }
-        
-    }
-    .table-1 {
-        transform-origin: 50% 100%;
-    }
-    .tables-wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        position: relative;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-        .table-con {
-            position: relative;
-            flex: 0 0 calc(100% / 3);
+        .tables-wrapper {
             display: flex;
-            justify-content: center;
-        }
-        .second-con {
-            max-width: 100%;
-            flex: 0 0 calc(100% / 3);
-        }
-        .third-con {
-            right: calc((-100% / 3) / 2);
-        }
-        .first-con {
-            right: calc((100% / 3) / 2);
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            position: relative;
+    
+            img {
+                width: 100%;
+                height: 100%;
+
+                // height
+                @media(max-height: 900px) {
+                    width: 80%;
+                    height: auto;
+                }
+                @media(max-height: 800px) {
+                    width: 70%;
+                }
+            }
+            .table-con {
+                position: relative;
+                flex: 0 0 calc(100% / 3);
+                display: flex;
+                justify-content: center;
+            }
+            .second-con {
+                max-width: 100%;
+                flex: 0 0 calc(100% / 3);
+            }
+            .third-con {
+                right: calc((-100% / 3) / 2);
+            }
+            .first-con {
+                right: calc((100% / 3) / 2);
+            }
+            .table-1 {
+                transform-origin: 50% 100%;
+            }
         }
     }
     // ==================== || TABLES } || ==================== \\
@@ -187,14 +208,20 @@
     .parallax-swimmer {
         z-index: 3;
         position: absolute;
-        top: 0;
+        
         left: 0;
         width: 100%;
+        img {
+            width: 100%;
+        }
+
+        // width
         @media(min-width: 993px) {
             z-index: 2;
+            top: 100%;
         }
         @media(max-width: 993px) {
-            bottom: -12%!important;
+            bottom: 2%;
         }
     }
     // ==================== || SWIMMER } || ==================== \\
@@ -203,20 +230,20 @@
     .drops {
         z-index: 2;
         position: absolute;
-        bottom: 20%;
         width: 100%;
+        img {
+            width: 100%;
+        }
+
+        // width
         @media(max-width: 993px) {
-            bottom: 10%!important;
+            bottom: 20%!important;
         }
         @media(min-width: 993px) {
             z-index: 1;
-            bottom: -100%;
         }
         @media(max-width: 375px) {
             bottom: 25%!important;
-        }
-        @media(max-height: 796px) {
-            max-height: 720px;
         }
     }
     // ==================== || DROPS } || ==================== \\

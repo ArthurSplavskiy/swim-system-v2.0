@@ -1,3 +1,5 @@
+@import '../../other/mixins.scss';
+
 .info-section {
     background: #010101;
 
@@ -16,5 +18,9 @@
                 margin: 32px 0;
             }
         }
+    }
+
+    .article-block {
+        @include adaptiv-value('padding-bottom', 220, 32, 1);
     }
 }

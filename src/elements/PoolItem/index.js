@@ -18,15 +18,15 @@ const ParallaxItem = ({ image, description, parallaxTrigger, startAction, elemen
 
     useEffect(() => {
 
-        gsap.from(`.${elementTrigger} .linebar .line`, {
-            scaleX: 0,
-            scrollTrigger: {
-                start: '-=500',
-                end: '+=200',
-                trigger: `${parallaxTrigger}`,
-                scrub: 1,
-            }
-        });
+        // gsap.from(`.${elementTrigger} .linebar .line`, {
+        //     scaleX: 0,
+        //     scrollTrigger: {
+        //         start: '-=500',
+        //         end: '+=200',
+        //         trigger: `${parallaxTrigger}`,
+        //         scrub: 1,
+        //     }
+        // });
 
         ScrollTrigger.matchMedia({
 
@@ -54,7 +54,7 @@ const ParallaxItem = ({ image, description, parallaxTrigger, startAction, elemen
             <div className="line-side">
                 <div className="linebar">
                     <div className="descrption">{description}</div>
-                    <div className="line"></div>
+                    <div className="_line-on-scroll"></div>
                 </div>
             </div>
             <div className="image-side">
